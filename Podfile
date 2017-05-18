@@ -5,6 +5,7 @@ project 'WKPhotoBrowser.xcodeproj'
 
 target 'WKPhotoBrowser' do
   pod 'Masonry'
+  pod 'SDWebImage'
 
   target 'WKPhotoBrowserTests' do
     inherit! :search_paths

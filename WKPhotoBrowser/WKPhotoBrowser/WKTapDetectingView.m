@@ -10,26 +10,17 @@
 
 @implementation WKTapDetectingView
 
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
-{
-    NSLog(@"====");
-}
-
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
+    [NSObject cancelPreviousPerformRequestsWithTarget:self];
     UITouch *touch = [touches anyObject];
-    NSUInteger tapCount = touch.tapCount;
-    switch (tapCount) {
-        case 1:
-            [self handleSingleTap:touch];
-            break;
-        case 2:
-            [self handleDoubleTap:touch];
-            break;
-        case 3:
-            [self handleTripleTap:touch];
-            break;
-        default:
-            break;
+    
+    if (touch.tapCount == 1) {
+        [self performSelector:@selector(handleSingleTap:) withObject:touch afterDelay:0.3];
+    }else if(touch.tapCount == 2)
+    {
+        [self performSelector:@selector(handleDoubleTap:) withObject:touch afterDelay:0.3];
+    }else if (touch.tapCount == 3){
+        [self handleTripleTap:touch];
     }
     [[self nextResponder] touchesEnded:touches withEvent:event];
 }

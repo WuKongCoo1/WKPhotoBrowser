@@ -6,43 +6,53 @@
 	<dict>
 		<key>Masonry.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-WKPhotoBrowser.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>2</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-WKPhotoBrowserTests.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>3</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-WKPhotoBrowserUITests.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>4</integer>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SDWebImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0CADE728D260C540737FAD31A220E485</key>
+		<key>690FFD20514EE371124E56C569436DCA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>53480ED0BE09FF49E34B1702D485CAAB</key>
+		<key>91A513F0EA2E471574A7B47AA95F18A0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9378ACCB0F00A9F8E51032BD97AA060E</key>
+		<key>9DC8D9E02903E93BD0B2FEC9D846EA20</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B9B0B16BE36BFA3BFD2B58BC027AC06F</key>
+		<key>D5B60862ECFFFD71CD1B8B2B4C5575CB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DEFACB0912053E11AE88EC89199CFA35</key>
 		<dict>
 			<key>primary</key>
 			<true/>

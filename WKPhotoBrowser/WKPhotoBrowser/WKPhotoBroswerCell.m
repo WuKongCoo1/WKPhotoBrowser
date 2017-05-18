@@ -53,7 +53,7 @@ WKTapDetectingViewDelegate
 
 - (void)commonSetup
 {
-    [self tapView];
+//    [self tapView];
     [self scrollView];
 //    UITapGestureRecognizer *tapGes = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTap:)];
 //    [self.contentView addGestureRecognizer:tapGes];
@@ -123,18 +123,18 @@ WKTapDetectingViewDelegate
                 
             }];
             
-            [scrollView addSubview:self.imageView];
-            [self.imageView mas_makeConstraints:^(MASConstraintMaker *make) {
-
-                make.height.equalTo(scrollView);
-                make.width.equalTo(scrollView);
-                make.center.equalTo(scrollView);
-            }];
-
-            
-//            [self.contentView layoutIfNeeded];
-            
-            scrollView.delegate = self;
+//            [scrollView addSubview:self.imageView];
+//            [self.imageView mas_makeConstraints:^(MASConstraintMaker *make) {
+//
+//                make.height.equalTo(scrollView);
+//                make.width.equalTo(scrollView);
+//                make.center.equalTo(scrollView);
+//            }];
+//
+//            
+////            [self.contentView layoutIfNeeded];
+//            
+//            scrollView.delegate = self;
             
             scrollView;
         });
@@ -175,6 +175,10 @@ WKTapDetectingViewDelegate
 }
 
 #pragma mark - Touches
+
+
+
+
 - (void)tapDetectingView:(WKTapDetectingView *)view singleTapDetected:(UITouch *)touch
 {
     

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		636B4C7F2C0B635246AD8177 /* libPods-WKPhotoBrowser.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DE3666DAB96B31062FB8D19 /* libPods-WKPhotoBrowser.a */; };
+		673B36281ECD919D000D030E /* UIView+WKProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 673B36271ECD919D000D030E /* UIView+WKProgress.m */; };
+		673B362B1ECD92E1000D030E /* WKProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 673B362A1ECD92E1000D030E /* WKProgressView.m */; };
 		6780EDEE1ECAF02600870BB2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6780EDED1ECAF02600870BB2 /* main.m */; };
 		6780EDF11ECAF02600870BB2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6780EDF01ECAF02600870BB2 /* AppDelegate.m */; };
 		6780EDF41ECAF02600870BB2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6780EDF31ECAF02600870BB2 /* ViewController.m */; };
@@ -47,6 +49,10 @@
 		3193D15C4BF95E988C34F5C7 /* Pods-WKPhotoBrowserUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WKPhotoBrowserUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WKPhotoBrowserUITests/Pods-WKPhotoBrowserUITests.release.xcconfig"; sourceTree = "<group>"; };
 		320B71EAD20612C8386126D1 /* Pods-WKPhotoBrowserTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WKPhotoBrowserTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WKPhotoBrowserTests/Pods-WKPhotoBrowserTests.release.xcconfig"; sourceTree = "<group>"; };
 		5A391BCDCA8D4B1457922A8B /* libPods-WKPhotoBrowserTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WKPhotoBrowserTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		673B36261ECD919D000D030E /* UIView+WKProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WKProgress.h"; sourceTree = "<group>"; };
+		673B36271ECD919D000D030E /* UIView+WKProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WKProgress.m"; sourceTree = "<group>"; };
+		673B36291ECD92E1000D030E /* WKProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKProgressView.h; sourceTree = "<group>"; };
+		673B362A1ECD92E1000D030E /* WKProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKProgressView.m; sourceTree = "<group>"; };
 		6780EDE91ECAF02600870BB2 /* WKPhotoBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WKPhotoBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6780EDED1ECAF02600870BB2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6780EDEF1ECAF02600870BB2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -197,6 +203,10 @@
 				6780EE2B1ECAF59500870BB2 /* WKPhotoBrowserStoryboard.storyboard */,
 				67B8CE0B1ECC3CED002FFABD /* WKTapDetectingView.h */,
 				67B8CE0C1ECC3CED002FFABD /* WKTapDetectingView.m */,
+				673B36261ECD919D000D030E /* UIView+WKProgress.h */,
+				673B36271ECD919D000D030E /* UIView+WKProgress.m */,
+				673B36291ECD92E1000D030E /* WKProgressView.h */,
+				673B362A1ECD92E1000D030E /* WKProgressView.m */,
 			);
 			path = WKPhotoBrowser;
 			sourceTree = "<group>";
@@ -218,12 +228,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6780EE161ECAF02700870BB2 /* Build configuration list for PBXNativeTarget "WKPhotoBrowser" */;
 			buildPhases = (
-				5E254A969E489EB4E48CF189 /* 📦 Check Pods Manifest.lock */,
+				5E254A969E489EB4E48CF189 /* [CP] Check Pods Manifest.lock */,
 				6780EDE51ECAF02600870BB2 /* Sources */,
 				6780EDE61ECAF02600870BB2 /* Frameworks */,
 				6780EDE71ECAF02600870BB2 /* Resources */,
-				AE61620E63CE7845F1532019 /* 📦 Embed Pods Frameworks */,
-				005C7BC1104EB195CA6A8E07 /* 📦 Copy Pods Resources */,
+				AE61620E63CE7845F1532019 /* [CP] Embed Pods Frameworks */,
+				005C7BC1104EB195CA6A8E07 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -238,12 +248,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6780EE191ECAF02700870BB2 /* Build configuration list for PBXNativeTarget "WKPhotoBrowserTests" */;
 			buildPhases = (
-				3B0F0F9A21F22CDB88733843 /* 📦 Check Pods Manifest.lock */,
+				3B0F0F9A21F22CDB88733843 /* [CP] Check Pods Manifest.lock */,
 				6780EDFE1ECAF02600870BB2 /* Sources */,
 				6780EDFF1ECAF02600870BB2 /* Frameworks */,
 				6780EE001ECAF02600870BB2 /* Resources */,
-				9518531ECDA98539A3A01B0C /* 📦 Embed Pods Frameworks */,
-				9395B3D44C9CE7D8FC50B4AE /* 📦 Copy Pods Resources */,
+				9518531ECDA98539A3A01B0C /* [CP] Embed Pods Frameworks */,
+				9395B3D44C9CE7D8FC50B4AE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -259,11 +269,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6780EE1C1ECAF02700870BB2 /* Build configuration list for PBXNativeTarget "WKPhotoBrowserUITests" */;
 			buildPhases = (
-				99AACD795B8DB826B33914B3 /* 📦 Check Pods Manifest.lock */,
+				99AACD795B8DB826B33914B3 /* [CP] Check Pods Manifest.lock */,
 				6780EE091ECAF02600870BB2 /* Sources */,
 				6780EE0A1ECAF02600870BB2 /* Frameworks */,
 				6780EE0B1ECAF02600870BB2 /* Resources */,
-				DC398B9236DB7B3249BAF67C /* 📦 Copy Pods Resources */,
+				DC398B9236DB7B3249BAF67C /* [CP] Copy Pods Resources */,
+				E8C7CE2DFD9924D44D4D404C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -350,14 +361,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		005C7BC1104EB195CA6A8E07 /* 📦 Copy Pods Resources */ = {
+		005C7BC1104EB195CA6A8E07 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -365,44 +376,44 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WKPhotoBrowser/Pods-WKPhotoBrowser-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		3B0F0F9A21F22CDB88733843 /* 📦 Check Pods Manifest.lock */ = {
+		3B0F0F9A21F22CDB88733843 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		5E254A969E489EB4E48CF189 /* 📦 Check Pods Manifest.lock */ = {
+		5E254A969E489EB4E48CF189 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		9395B3D44C9CE7D8FC50B4AE /* 📦 Copy Pods Resources */ = {
+		9395B3D44C9CE7D8FC50B4AE /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -410,14 +421,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WKPhotoBrowserTests/Pods-WKPhotoBrowserTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9518531ECDA98539A3A01B0C /* 📦 Embed Pods Frameworks */ = {
+		9518531ECDA98539A3A01B0C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,29 +436,29 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WKPhotoBrowserTests/Pods-WKPhotoBrowserTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		99AACD795B8DB826B33914B3 /* 📦 Check Pods Manifest.lock */ = {
+		99AACD795B8DB826B33914B3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		AE61620E63CE7845F1532019 /* 📦 Embed Pods Frameworks */ = {
+		AE61620E63CE7845F1532019 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -455,19 +466,34 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WKPhotoBrowser/Pods-WKPhotoBrowser-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DC398B9236DB7B3249BAF67C /* 📦 Copy Pods Resources */ = {
+		DC398B9236DB7B3249BAF67C /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WKPhotoBrowserUITests/Pods-WKPhotoBrowserUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8C7CE2DFD9924D44D4D404C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WKPhotoBrowserUITests/Pods-WKPhotoBrowserUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -478,6 +504,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6780EE251ECAF24500870BB2 /* WKPhotoBrowserScrollView.m in Sources */,
+				673B36281ECD919D000D030E /* UIView+WKProgress.m in Sources */,
+				673B362B1ECD92E1000D030E /* WKProgressView.m in Sources */,
 				6780EDF41ECAF02600870BB2 /* ViewController.m in Sources */,
 				6780EDF11ECAF02600870BB2 /* AppDelegate.m in Sources */,
 				6780EE281ECAF39A00870BB2 /* WKPhotoBroswerCell.m in Sources */,
