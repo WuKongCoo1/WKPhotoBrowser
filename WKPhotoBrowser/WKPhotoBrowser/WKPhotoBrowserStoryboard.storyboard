@@ -12,7 +12,7 @@
         <!--Photo Browser-->
         <scene sceneID="UUc-x2-BbM">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="IPt-g4-3mj" customClass="WKPhotoBrowser" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WKPhotoBrowser" automaticallyAdjustsScrollViewInsets="NO" id="IPt-g4-3mj" customClass="WKPhotoBrowser" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lZe-Rd-gB0"/>
                         <viewControllerLayoutGuide type="bottom" id="LDZ-Hg-CwH"/>

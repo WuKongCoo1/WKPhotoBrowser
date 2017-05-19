@@ -123,19 +123,6 @@ WKTapDetectingViewDelegate
                 
             }];
             
-//            [scrollView addSubview:self.imageView];
-//            [self.imageView mas_makeConstraints:^(MASConstraintMaker *make) {
-//
-//                make.height.equalTo(scrollView);
-//                make.width.equalTo(scrollView);
-//                make.center.equalTo(scrollView);
-//            }];
-//
-//            
-////            [self.contentView layoutIfNeeded];
-//            
-//            scrollView.delegate = self;
-            
             scrollView;
         });
     }
@@ -174,47 +161,11 @@ WKTapDetectingViewDelegate
     return _tapView;
 }
 
-#pragma mark - Touches
-
-
-
-
-- (void)tapDetectingView:(WKTapDetectingView *)view singleTapDetected:(UITouch *)touch
+#pragma mark -  加载图片
+- (void)setImageURL:(NSString *)imageUrlString thumb:(NSString *)thumbImageUrlString
 {
-    
+    [self.scrollView setImageURL:imageUrlString thumb:thumbImageUrlString];
 }
-- (void)tapDetectingView:(WKTapDetectingView *)view doubleTapDetected:(UITouch *)touch
-{
-    CGPoint point =  [touch locationInView:self.scrollView];
-    
-    //双击
-    if (_scrollView.minimumZoomScale <= _scrollView.zoomScale && _scrollView.maximumZoomScale > _scrollView.zoomScale * 2)
-    {
-        // Zoom in to twice the size
-        CGRect zoomRect = [self zoomRectWithTouchPoint:point zoomScale:(_scrollView.maximumZoomScale + _scrollView.minimumZoomScale) / 2];;
-        [_scrollView zoomToRect:zoomRect animated:YES];
-    }
-    else
-        if (_scrollView.maximumZoomScale > _scrollView.zoomScale && _scrollView.maximumZoomScale / 2 <= _scrollView.zoomScale)
-        {
-            [_scrollView setZoomScale:_scrollView.maximumZoomScale animated:YES];
-        }
-        else
-        {
-            [_scrollView setZoomScale:_scrollView.minimumZoomScale animated:YES];
-        }
-
-}
-- (void)tapDetectingView:(WKTapDetectingView *)view tripleTapDetected:(UITouch *)touch
-{
-    
-}
-
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
-{
-    NSLog(@"--");
-}
-
 
 
 @end

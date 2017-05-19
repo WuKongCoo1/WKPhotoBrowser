@@ -64,7 +64,7 @@
 - (void)setProgress:(CGFloat)progress
 {
 #if DEBUG
-    NSLog(@"%g", progress);
+//    NSLog(@"%g", progress);
 #endif
     if (progress > 1) {
         progress = 1;

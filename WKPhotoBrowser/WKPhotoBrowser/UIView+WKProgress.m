@@ -23,30 +23,39 @@ static void * WKProgresssKey = &WKProgresssKey;
 
 - (void)setProgress:(CGFloat)progress
 {
-    self.progressView.hidden = progress >= 1;
-    if (self.progressView.hidden) {
-        return;
-    }
-    self.progressView.progress = progress;
-    [self bringSubviewToFront:self.progressView];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        
+        self.progressView.hidden = progress >= 1;
+        
+        if (self.progressView.hidden) {
+            NSLog(@"hidden");
+            return;
+        }
+        self.progressView.progress = progress;
+        [self bringSubviewToFront:self.progressView];
+    });
 }
 
 #pragma mark - getter & setter
 
 - (WKProgressView *)progressView
 {
+    
     WKProgressView *pv = objc_getAssociatedObject(self, WKProgresssKey);
     
     if(pv == nil){
+        
         pv = [[WKProgressView alloc] init];
         pv.trackColor = pv.progressColor = [UIColor whiteColor];
-        [self addSubview:pv];
-        
-        [pv mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.size.mas_equalTo(CGSizeMake(40.f, 40.f));
-            make.center.equalTo(self);
-        }];
-        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self addSubview:pv];
+            
+            [pv mas_makeConstraints:^(MASConstraintMaker *make) {
+                make.size.mas_equalTo(CGSizeMake(40.f, 40.f));
+                make.center.equalTo(self);
+            }];
+            
+        });
         self.progressView = pv;
     }
     

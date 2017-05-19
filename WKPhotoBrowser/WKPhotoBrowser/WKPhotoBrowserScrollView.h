@@ -10,4 +10,6 @@
 
 @interface WKPhotoBrowserScrollView : UIScrollView
 
+- (void)setImageURL:(NSString *)imageUrlString thumb:(NSString *)thumbImageUrlString;
+
 @end

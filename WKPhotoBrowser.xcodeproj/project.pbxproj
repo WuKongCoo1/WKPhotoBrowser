@@ -76,6 +76,7 @@
 		6780EE261ECAF39A00870BB2 /* WKPhotoBroswerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKPhotoBroswerCell.h; sourceTree = "<group>"; };
 		6780EE271ECAF39A00870BB2 /* WKPhotoBroswerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKPhotoBroswerCell.m; sourceTree = "<group>"; };
 		6780EE2B1ECAF59500870BB2 /* WKPhotoBrowserStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WKPhotoBrowserStoryboard.storyboard; sourceTree = "<group>"; };
+		678CFF301ECEBD4F007A2C6C /* WKPhotoProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKPhotoProtocol.h; sourceTree = "<group>"; };
 		67B8CE0B1ECC3CED002FFABD /* WKTapDetectingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKTapDetectingView.h; sourceTree = "<group>"; };
 		67B8CE0C1ECC3CED002FFABD /* WKTapDetectingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKTapDetectingView.m; sourceTree = "<group>"; };
 		71558935200D9786F1F2030E /* Pods-WKPhotoBrowserUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WKPhotoBrowserUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WKPhotoBrowserUITests/Pods-WKPhotoBrowserUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -207,6 +208,7 @@
 				673B36271ECD919D000D030E /* UIView+WKProgress.m */,
 				673B36291ECD92E1000D030E /* WKProgressView.h */,
 				673B362A1ECD92E1000D030E /* WKProgressView.m */,
+				678CFF301ECEBD4F007A2C6C /* WKPhotoProtocol.h */,
 			);
 			path = WKPhotoBrowser;
 			sourceTree = "<group>";

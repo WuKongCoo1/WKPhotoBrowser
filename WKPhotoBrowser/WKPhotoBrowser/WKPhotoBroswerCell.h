@@ -22,5 +22,5 @@
 @property (copy, nonatomic) NSString *imageName;
 
 @property (weak, nonatomic) id<WKPhotoBroswerCellDelegate> delegate;
-
+- (void)setImageURL:(NSString *)imageUrlString thumb:(NSString *)thumbImageUrlString;
 @end
